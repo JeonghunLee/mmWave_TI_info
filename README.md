@@ -1,7 +1,8 @@
-# Introduction to mmwave Sensing: FMCW(Frequency Modulated Continuous Wave) Radars
+# Radars Basic Information
 
-Introduction to mmwave Sensing: FMCW Radars
-Sandeep Rao, Texas Instruments
+FMCW(Frequency Modulated Continuous Wave)
+
+Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 
 -[Introduction to mmwave Sensing: FMCW Radars1](https://www.youtube.com/watch?v=8cHACNNDWD8)
 -[Introduction to mmwave Sensing: FMCW Radars2]((https://www.youtube.com/watch?v=bB-SGw9uRgQ)
