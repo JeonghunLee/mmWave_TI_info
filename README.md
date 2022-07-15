@@ -15,13 +15,14 @@ Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 
 # TI  Wellness 관련자료
 
-TI Wellness 관련설명자료 
+TI Wellness 관련설명자료     
 https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-advantages-for-independent-assisted-living?HQS=epd-rap-null-contactlessmonitoring-rebs-ta-nextrollnet_160x600-kr&DCM=yes&dclid=CL2zjprkz_gCFafBTAIdoSsGcQ
-
-Contactless patient and elderly care using mmWave sensors | TI.com Video    
+      
+      
+Contactless patient and elderly care using mmWave sensors | TI.com Video          
   https://training.ti.com/contactless-patient-and-elderly-care-using-mmwave-sensors
 
-3D Occupancy Sensing   
+3D Occupancy Sensing    
   https://training.ti.com/3d-occupancy-sensing-home-and-office?context=1128486-1139156-1148009
 
 mmWave Vital Signs Lab   
