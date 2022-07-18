@@ -28,7 +28,7 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
 **mmWave Vital Signs Lab**   
   https://training.ti.com/mmwave-vital-signs-lab?keyMatch=MMWAVE%20VITAL%20SIGN  
 
-**IWR6843AOPEVM Technical Docs**
+**IWR6843AOPEVM Technical Docs**             
   https://www.ti.com/tool/IWR6843AOPEVM#tech-docs
 
 **60GHz mmWave Sensor EVMs (Rev. E)**     
