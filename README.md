@@ -28,6 +28,13 @@ Contactless patient and elderly care using mmWave sensors | TI.com Video
 mmWave Vital Signs Lab   
   https://training.ti.com/mmwave-vital-signs-lab?keyMatch=MMWAVE%20VITAL%20SIGN  
 
+  https://www.ti.com/tool/IWR6843AOPEVM#tech-docs
+
+60GHz mmWave Sensor EVMs (Rev. E)
+12 Channel Virtual Antenna Array (MIMO)
+  https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP
+
+
 # 일반 Radar
 
   https://en.wikipedia.org/wiki/Radar
