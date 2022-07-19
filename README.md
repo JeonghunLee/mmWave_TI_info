@@ -49,6 +49,8 @@ Lamda(Wavelength)이며, 삼각함수를 알면
   * 3.7 IWR6843ISK-ODS Antenna   
   * 4.5 xWR6843AOPEVM Antenna    
   * 5.5 xWR6843AOPEVM Antenna      
+
+
   https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP
 
 
