@@ -36,7 +36,7 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
   https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP
 
 
-** MIMO RADAR**
+** MIMO RADAR**         
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
