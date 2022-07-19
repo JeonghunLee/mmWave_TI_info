@@ -40,9 +40,16 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
+
+
+
+
+
 # 일반 Radar
 
   https://en.wikipedia.org/wiki/Radar
+
+
 
 
 # FMCW 측정관련내용 
