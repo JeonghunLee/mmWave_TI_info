@@ -44,7 +44,7 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
 
 **60GHz mmWave Sensor EVMs (Rev. E)**     
 12 Channel Virtual Antenna Array (MIMO) 
-Lamda(Wavelength)이며, 삼각함수를 알면 이해가됨 (상위 TI 
+Lamda(Wavelength)이며, 삼각함수를 알면 이해가됨 (상위 TI 교육자료 확인)      
   * 3.6 xWR6843ISK Antenna  
   * 3.7 IWR6843ISK-ODS Antenna   
   * 4.5 xWR6843AOPEVM Antenna    
