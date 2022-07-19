@@ -23,6 +23,9 @@ Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 
 # TI  Wellness 관련자료
 
+<br/>
+<br/>
+
 **TI Wellness 관련설명자료**       
 https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-advantages-for-independent-assisted-living?HQS=epd-rap-null-contactlessmonitoring-rebs-ta-nextrollnet_160x600-kr&DCM=yes&dclid=CL2zjprkz_gCFafBTAIdoSsGcQ
       
