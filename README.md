@@ -7,11 +7,15 @@ Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 -[Introduction to mmwave Sensing: FMCW Radars1](https://www.youtube.com/watch?v=8cHACNNDWD8)       
 -[Introduction to mmwave Sensing: FMCW Radars2](https://www.youtube.com/watch?v=bB-SGw9uRgQ)        
 
--[Radar Blogs](https://adasauto.blogspot.com/)    
-
-관련 TI 자료 
+관련 TI 자료 (현재 자료가 없어져서, 상위 파일에 넣음)
 -  mmwaveSensing-FMCW-offlineviewing_4.pdf    
 
+-[Radar Blogs](https://adasauto.blogspot.com/)      
+  -[RADAR, Why need](https://adasauto.blogspot.com/2018/04/requirements-for-radar-system-for.html)    
+  -[RADAR, Type](https://adasauto.blogspot.com/2018/02/qualities-that-radar-system-should.html)    
+
+<br/>
+<br/>
 
 # TI  Wellness 관련자료
 
@@ -40,8 +44,8 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
-
-
+<br/>
+<br/>
 
 
 
@@ -50,11 +54,15 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
   https://en.wikipedia.org/wiki/Radar
 
 
-
+<br/>
+<br/>
 
 # FMCW 측정관련내용 
 
 - [Analysis of FMCW radar signals in automotive applications](https://www.youtube.com/watch?v=8qaCSQ83ZyU)
+
+<br/>
+<br/>
 
 # Radar 와 Communication 관련자료 
 
@@ -62,3 +70,5 @@ Radar의 HW구조를 보면, synthesizer를 제어를 하여 통신부분으로 
 
  https://www5.cadence.com/newsletter-subscription-msa-ebook-rfmw-lp.html?utm_source=google&utm_medium=cpc&utm_term=fmcw&utm_campaign=RF_2021&utm_source=adwords&utm_medium=ppc&hsa_acc=1270110830&hsa_cam=12316095010&hsa_grp=118067585256&hsa_ad=497957189478&hsa_src=g&hsa_tgt=kwd-874051436855&hsa_kw=fmcw&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw_b6WBhAQEiwAp4HyIMJ1D7q-PRaTvqNXVGevb5l4NTslvmg8av64Gykcn06Z1Pp_CqX67xoCSagQAvD_BwE
   
+<br/>
+<br/>
