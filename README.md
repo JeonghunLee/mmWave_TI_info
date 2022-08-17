@@ -10,6 +10,7 @@ Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 관련 TI 자료 
 현재 TI사이트에서 자료가 없어져서, 상위 파일에 넣음
 -  mmwaveSensing-FMCW-offlineviewing_4.pdf    
+  -[Introduction to mmWave radar sensing: FMCW radars](https://training.ti.com/mmwave-training-series)    
 
 <br/>
 
