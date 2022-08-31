@@ -62,6 +62,12 @@ Lamda(Wavelength)이며, 삼각함수를 알면 이해가됨 (상위 TI 교육�
 <br/>
 <br/>
 
+**TI mmWave**
+  https://www.ti.com/ko-kr/design-resources/embedded-development/industrial-mmwave-radar-sensors.html
+
+mmWave Reference
+  https://www.ti.com/reference-designs/index.html#search?keyword=mmwave&applid=120
+
 
 
 # 일반 Radar
