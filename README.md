@@ -137,7 +137,8 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 <br/>
 <br/>
 
-Radar의 HW구조를 보면, synthesizer를 제어를 하여 통신부분으로 편입될 가능성이 있을 것 같아 관련자료 찾음
+Radar의 HW구조를 보면, synthesizer를 제어를 하여 통신부분으로 편입될 가능성이 있을 것 같아 관련자료 찾음    
+Syntesizer를 빼면, 일반 Radio 즉, RF 통신과 큰차이가 없다    
 예를들면, WIFI or 5G에 적용가능할 것 같으며, 다만 Time을 분할해서 Syntesizer를 사용해야 하므로 관련부분은 복잡해질 둣하다.   
 
 <br/>
