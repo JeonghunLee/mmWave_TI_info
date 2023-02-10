@@ -63,6 +63,7 @@ https://www.ti.com/tool/MMWAVE-3P-SEARCH
 **60GHz mmWave Sensor EVMs (Rev. E)**     
 12 Channel Virtual Antenna Array (MIMO), 안테나 설계 및 기본사항을 알려면 아래 부분참조         
 Lamda(Wavelength)이며, 삼각함수를 알면 이해가됨 (상위 TI 교육자료 확인)      
+Azimuth/Elevation 부분의 이해와 Lamda를 기본으로 이해하면 기본 3D 부분 안테나는 이해가 되어짐 (Phase 기반으로 삼각함수이용)            
   * 3.6 xWR6843ISK Antenna  
   * 3.7 IWR6843ISK-ODS Antenna   
   * 4.5 xWR6843AOPEVM Antenna    
