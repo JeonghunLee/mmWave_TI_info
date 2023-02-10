@@ -32,6 +32,14 @@ RF Calibration 방법, 역시 TI에서 제공해주고 있으며, 이 부분도 
 
 <br/>
 
+RF TEST 방법을 소개하고 있으며, 각 부분을 보정하는 부분역시 설명해주고 있다.    
+Chamber 구조 및 동작원리 쉽게 설명하면, Loopback으로 TX후 RX가 제대로 오는지 SNR로 보는 방식이며, 각 부분을 보정(Range Bias/Channel Gain/Offset)한다.     
+나도 Chamber가 너무 크고 양산할때 문제라고 생각하는데, 아래를 보면, Cubic으로 된 Chamber를 소개한다 (역시 TI ) 
+어차피 Chamber 역할은 단순하며, 작아도 상관없다 (현재 내생각으로)          
+  https://www.ti.com/lit/an/spracx7/spracx7.pdf?ts=1675994243978&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP
+
+<br/>
+
 # TI  Wellness 관련자료
 
 <br/>
