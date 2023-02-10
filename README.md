@@ -82,6 +82,7 @@ IWR6843AOP
 - (아마 복잡한 DMA까지 필요 없어서 뺀것 같다 다만, Channel이 늘어나면, 추후 EDMA도 필요할꺼 같은데)                    
   https://www.ti.com/product/IWR6843AOP
 
+<br/>
 
 **Healthcare 자료**           
 TI Traning 자료 
@@ -98,7 +99,7 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 3D 분석할 경우, TI문서 볼경우, PCB의 Anthena 거리 및 위치를 참조하도록 하자       
   https://training.ti.com/non-contact-patient-and-elderly-monitoring-mmwave-radar-webinar
 
-
+<br/>
   
 **MIMO RADAR**  
 이 부분을 보면 쉽게 Phase 기반으로 삼각함수이용하여 이해가능하며, arch(inverse) tangent 도 충분히 이용가능할 것 같다.     
@@ -116,9 +117,13 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 **mmWave Reference**      
   https://www.ti.com/reference-designs/index.html#search?keyword=mmwave&applid=120
 
-
+<br/>
+<br/>
 
 # 일반 Radar
+
+<br/>
+<br/>
 
   https://en.wikipedia.org/wiki/Radar
 
@@ -127,6 +132,8 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 <br/>
 
 # FMCW 측정관련내용 
+
+<br/>
 
 - [Analysis of FMCW radar signals in automotive applications](https://www.youtube.com/watch?v=8qaCSQ83ZyU)
 
@@ -142,6 +149,7 @@ Radar의 HW구조를 보면, synthesizer를 제어를 하여 통신부분으로 
 Syntesizer를 빼면, 일반 Radio 즉, RF 통신과 큰차이가 없다    
 예를들면, WIFI or 5G에 적용가능할 것 같으며, 다만 Time을 분할해서 Syntesizer를 사용해야 하므로 관련부분은 복잡해질 둣하다.   
 
+<br/>
 <br/>
 
  https://www5.cadence.com/newsletter-subscription-msa-ebook-rfmw-lp.html?utm_source=google&utm_medium=cpc&utm_term=fmcw&utm_campaign=RF_2021&utm_source=adwords&utm_medium=ppc&hsa_acc=1270110830&hsa_cam=12316095010&hsa_grp=118067585256&hsa_ad=497957189478&hsa_src=g&hsa_tgt=kwd-874051436855&hsa_kw=fmcw&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw_b6WBhAQEiwAp4HyIMJ1D7q-PRaTvqNXVGevb5l4NTslvmg8av64Gykcn06Z1Pp_CqX67xoCSagQAvD_BwE
