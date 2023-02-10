@@ -95,7 +95,8 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 
 
   
-**MIMO RADAR**         
+**MIMO RADAR**  
+이 부분을 보면 쉽게 Phase 기반으로 삼각함수이용하여 이해가능하며, arch(inverse) tangent 도 충분히 이용가능할 것 같다.     
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
