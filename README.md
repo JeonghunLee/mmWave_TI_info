@@ -22,6 +22,13 @@ Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 <br/>
 <br/>
 
+RADAR의 기본이해는 생각보다 어렵지 않으며, 기본 DSP지식이 있다면 쉽게 이해하리라고 본다.    
+다만. RF이므로 Noise 처리 와 매번 새로운 상황마다 테스트해야 하는 것이 반복되리라고 생각된다.   
+
+<br/>
+
+RF Calibration 방법, 역시 TI에서 제공해주고 있으며, 이 부분도 추후 보도록 하겠다.  
+
 # TI  Wellness 관련자료
 
 <br/>
