@@ -28,6 +28,9 @@ RADAR의 기본이해는 생각보다 어렵지 않으며, 기본 DSP지식이 �
 <br/>
 
 RF Calibration 방법, 역시 TI에서 제공해주고 있으며, 이 부분도 추후 보도록 하겠다.  
+  https://www.ti.com/lit/an/spracf4c/spracf4c.pdf?ts=1675925584167&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FAWR6843AOP
+
+<br/>
 
 # TI  Wellness 관련자료
 
@@ -74,7 +77,8 @@ Azimuth/Elevation 부분의 이해와 Lamda를 기본으로 이해하면 기본 
 **TI AOP Type**  
 IWR6843AOP 
 - Radio 3(TX)x4(RX)  : RX 4Channel이 되어지니, 3차원까지 좌표분석이 가능 (각 Phase이용하면됨)        
-- C674xDSP/ARM-R4F200MHz 다만 아쉬운것은 RF가 RADAR만 지원 이외 미지원  
+- C674xDSP/ARM-R4F200MHz 다만 아쉬운것은 RF가 RADAR만 지원 이외 미지원이며, EDMA 대신 DMA로 되어있다          
+- (아마 복잡한 DMA까지 필요 없어서 뺀것 같다 다만, Channel이 늘어나면, 추후 EDMA도 필요할꺼 같은데)                    
   https://www.ti.com/product/IWR6843AOP
 
 
