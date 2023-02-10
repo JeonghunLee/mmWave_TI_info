@@ -50,9 +50,10 @@ https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-a
 
 <br/>
 
-**TI 3rd Party Tool**   
+**TI Tool**   
 https://www.ti.com/tool/MMWAVE-3P-SEARCH
-      
+https://www.ti.com/tool/MMWAVE-STUDIO#tech-docs
+
 **Contactless patient and elderly care using mmWave sensors | TI.com Video**            
   https://training.ti.com/contactless-patient-and-elderly-care-using-mmwave-sensors
 
