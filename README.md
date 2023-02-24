@@ -2,10 +2,14 @@
 
 FMCW(Frequency Modulated Continuous Wave)
 
-Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)               
 
+* Introduction to mmwave Sensing: FMCW Radars (Youtube)
+(Sandeep Rao, Texas Instruments)                
 -[Introduction to mmwave Sensing: FMCW Radars1](https://www.youtube.com/watch?v=8cHACNNDWD8)       
 -[Introduction to mmwave Sensing: FMCW Radars2](https://www.youtube.com/watch?v=bB-SGw9uRgQ)        
+
+* FMCW Radar Detection and Tracking (Youtube)                  
+-[FMCW Radar Detection and Tracking](https://www.youtube.com/watch?v=R3IKBRMi4dc)
 
 관련 TI 자료 
 현재 TI사이트에서 자료가 없어져서, 상위 파일에 넣음
@@ -14,28 +18,41 @@ Introduction to mmwave Sensing: FMCW Radars (Sandeep Rao, Texas Instruments)
 
 <br/>
 
-
--[Radar Blogs](https://adasauto.blogspot.com/)      
+* RADAR 관련 Blog        
+  -[Radar Blogs](https://adasauto.blogspot.com/)      
   -[RADAR, Why need](https://adasauto.blogspot.com/2018/04/requirements-for-radar-system-for.html)    
   -[RADAR, Type](https://adasauto.blogspot.com/2018/02/qualities-that-radar-system-should.html)    
 
 <br/>
 <br/>
 
-RADAR의 기본이해는 생각보다 어렵지 않으며, 기본 DSP지식이 있다면 쉽게 이해하리라고 본다.    
-다만. RF이므로 Noise 처리 와 매번 새로운 상황마다 테스트해야 하는 것이 반복되리라고 생각된다.   
+RADAR의 기본이해는 생각보다 어렵지 않으나 완벽한 이해는 좀 힘들 것 같다. (기본 DSP지식이 있다면 어느정도 기본이해는 되어진다)    
+문서를 가끔 다시 한번 보는데, 각 Chapter마다 질문이 있는 Why를 생각하기 위해서 여러번 생각하게 한다.   
+  
 
 <br/>
 
-RF Calibration 방법, 역시 TI에서 제공해주고 있으며, 이 부분도 추후 보도록 하겠다.  
+* RF Calibration 
+TI에서는 Self-Calibration 기능제공해주고 있으며, 글을 읽어보면,  주기적으로 Calibration을 해야 하는 것으로 보인다.  
+주로 RF기반으로 발생하는 오차들 주로 보정을 하는 것으로 보이며, 동작구조를 보면, Loopback 형식으로 되어 구동되어지는 것 같다.  
+List of Calibrations 확인 
+(PLL/ Synthesizer VCO/ ADC DC offset / HPF/LPW Cutoff Calibration 기타등등)
+AC 와 DC에서 발생되어지는 오차와 Clock 보정을 비롯하여 각 Gain /Phase 오차 보정 등    
+정밀한 측정을 위해서 많은 보정을 걸치는 것으로 보인다.  
+RF이므로 오차와 Noise 처리 와 매번 새로운 상황마다 테스트해야 하는 것이 반복되리라고 생각된다.
   https://www.ti.com/lit/an/spracf4c/spracf4c.pdf?ts=1675925584167&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FAWR6843AOP
+
+
+  
+
 
 <br/>
 
 RF TEST 방법을 소개하고 있으며, 각 부분을 보정하는 부분역시 설명해주고 있다.    
 Chamber 구조 및 동작원리 쉽게 설명하면, Loopback으로 TX후 RX가 제대로 오는지 SNR로 보는 방식이며, 각 부분을 보정(Range Bias/Channel Gain/Offset)한다.     
 나도 Chamber가 너무 크고 양산할때 문제라고 생각하는데, 아래를 보면, Cubic으로 된 Chamber를 소개한다 (역시 TI ) 
-어차피 Chamber 역할은 단순하며, 작아도 상관없다 (현재 내생각으로)          
+어차피 Chamber 역할은 단순하며, 작아도 상관을 없을 것 같다 (현재 내생각으로)           
+흐음 거리가 작으면, 오차를 좀 더 정확하게 잡아햐 할 것으로 생각되어진다.  
   https://www.ti.com/lit/an/spracx7/spracx7.pdf?ts=1675994243978&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP
 
 <br/>
@@ -45,14 +62,22 @@ Chamber 구조 및 동작원리 쉽게 설명하면, Loopback으로 TX후 RX가 
 <br/>
 <br/>
 
-**TI Wellness 관련설명자료**       
+**TI Wellness 관련설명자료**    
+TI에서 제공하는 Wellness 기술이며, 이미 노인대상으로 많이 나온것으로 알고 있다.    
+[IWR6843AOP](https://www.ti.com/product/IWR6843AOP)      
+[TI Industrial](https://www.ti.com/sensors/mmwave-radar/industrial/overview.html)     
 https://e2e.ti.com/blogs_/b/process/posts/how-mmwave-sensors-create-technology-advantages-for-independent-assisted-living?HQS=epd-rap-null-contactlessmonitoring-rebs-ta-nextrollnet_160x600-kr&DCM=yes&dclid=CL2zjprkz_gCFafBTAIdoSsGcQ
 
 <br/>
 
 **TI Tool**   
-https://www.ti.com/tool/MMWAVE-3P-SEARCH
-https://www.ti.com/tool/MMWAVE-STUDIO#tech-docs
+mmWave-Studio라고 CCS처럼 GUI Tool을 제공을 해주고 있으며, 현재 버전도 계속 Upddate 되었다.
+이제는 Zoom 처럼 Cloud 기반에서 동작되는 것도 있는 것 같은데, 많이 궁금하기는 하다.   
+https://www.ti.com/tool/MMWAVE-3P-SEARCH                
+https://www.ti.com/tool/MMWAVE-STUDIO#tech-docs                    
+https://www.ti.com/lit/ug/swru529c/swru529c.pdf?ts=1677202685363&ref_url=https%253A%252F%252Fwww.ti.com%252Ftool%252FMMWAVE-STUDIO
+
+<br/>
 
 **Contactless patient and elderly care using mmWave sensors | TI.com Video**            
   https://training.ti.com/contactless-patient-and-elderly-care-using-mmwave-sensors
@@ -81,8 +106,10 @@ Azimuth/Elevation 부분의 이해와 Lamda를 기본으로 이해하면 기본 
   * 3.7 IWR6843ISK-ODS Antenna   
   * 4.5 xWR6843AOPEVM Antenna    
   * 5.5 xWR6843AOPEVM Antenna      
-  https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP
-
+  https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP          
+  https://dev.ti.com/tirex/explore/node?node=A__AMKSv8im74YjT7cmO9jVHg__com.ti.mmwave_industrial_toolbox__VLyFKFf__4.9.0    
+  
+  
 
 **TI AOP Type**  
 IWR6843AOP 
@@ -111,7 +138,14 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 <br/>
   
 **MIMO RADAR**  
-이 부분을 보면 쉽게 Phase 기반으로 삼각함수이용하여 이해가능하며, arch(inverse) tangent 도 충분히 이용가능할 것 같다.     
+이 부분을 보면 쉽게 Phase 기반으로 삼각함수이용하여 이해가능하며, arch(inverse) tangent 도 충분히 이용가능할 것 같다.   
+  * single-input-multiple-output (SIMO): 1개 TX기반으로 여러개의 RX에서 이를 분석한다.    
+  * Multiple-input-multiple-output (MIMO): 여러개 TX 기반으로 RX에서 이를 구분하여 가상 Channel을 만들어 사용한다.   
+      * 세부내용은 아래 Principle of the MIMO Radar
+      * Time Division Multiplexing (TDM-MIMO)  
+      * BPM-MIMO 
+만약 Lamda/theta/omega 기호의 의미를 파악하지 못했다면, 상위 introdution을 다시 보자.   
+수학도출과정이 이해가 안되어진다면, 그냥 그러려니하고 넘어가자   
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
