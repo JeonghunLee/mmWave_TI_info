@@ -170,10 +170,18 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 
   https://en.wikipedia.org/wiki/Radar
 
-## RF 기본용어
+<br/>
+<br/>
+
+
+## RF 기본용어          
+
+
+  http://www.rfdh.com/rfdb.php3
 
 <br/>
 <br/>
+
 
 ## 시스템 잡음지수 계산 (Cascade Noise Figure)
  http://www.rfdh.com/rfdb/nf.htm
