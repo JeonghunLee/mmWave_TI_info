@@ -170,6 +170,10 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 
   https://en.wikipedia.org/wiki/Radar
 
+## 시스템 잡음지수 계산 (Cascade Noise Figure)
+
+
+ http://www.rfdh.com/rfdb/nf.htm
 
 <br/>
 <br/>
