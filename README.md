@@ -13,6 +13,7 @@ FMCW(Frequency Modulated Continuous Wave)
 
 관련 TI 자료 
 현재 TI사이트에서 자료가 없어져서, 상위 파일에 넣음
+이 문서에서 질문을 하는데, 질문이 너무 좋으며, 그 답을 각각에 모듈에서 쉽게 찾을 수 있다.     
 -  mmwaveSensing-FMCW-offlineviewing_4.pdf    
   -[Introduction to mmWave radar sensing: FMCW radars](https://training.ti.com/mmwave-training-series)    
 
@@ -110,16 +111,20 @@ Azimuth/Elevation 부분의 이해와 Lamda를 기본으로 이해하면 기본 
   * 3.7 IWR6843ISK-ODS Antenna   
   * 4.5 xWR6843AOPEVM Antenna    
   * 5.5 xWR6843AOPEVM Antenna      
-  https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP          
-  https://dev.ti.com/tirex/explore/node?node=A__AMKSv8im74YjT7cmO9jVHg__com.ti.mmwave_industrial_toolbox__VLyFKFf__4.9.0    
   
+https://www.ti.com/lit/ug/swru546e/swru546e.pdf?ts=1658041409154&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FIWR6843AOP          
+
+일단 너무 보기 좋은 사이트 ㅋㅋㅋ                         
+https://dev.ti.com/tirex/explore/node?node=A__AMKSv8im74YjT7cmO9jVHg__com.ti.mmwave_industrial_toolbox__VLyFKFf__4.9.0    
+https://dev.ti.com/tirex/explore/node?node=AJuqjWdTuol3jtoyFrofqw
+
   
 
 **TI AOP Type**  
 IWR6843AOP 
 - Radio 3(TX)x4(RX)  : RX 4Channel이 되어지니, 3차원까지 좌표분석이 가능 (각 Phase이용하면됨)        
 - C674xDSP/ARM-R4F200MHz 다만 아쉬운것은 RF가 RADAR만 지원 이외 미지원이며, EDMA 대신 DMA로 되어있다          
-- (아마 복잡한 DMA까지 필요 없어서 뺀것 같다 다만, Channel이 늘어나면, 추후 EDMA도 필요할꺼 같은데)                    
+- 아마 복잡한 DMA까지 필요 없어서 뺀것 같다 다만, Channel이 늘어나면, 추후 EDMA도 필요할꺼 같은데, 다른 모델을 찾아보면 알겠지.                                           
   https://www.ti.com/product/IWR6843AOP
 
 <br/>
@@ -152,7 +157,10 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 수학도출과정이 이해가 안되어진다면, 그냥 그러려니하고 넘어가자   
 중요한 것은 안테나의 RX의 Lamda/2 이다. (현재 이해한 바로는 TX의 주파수 분리하는 최소 Phase의 180 필요)    
 그 이유를 간단히 보면, OFDM과 유사한 것 같다.                                
-  https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
+
+<br/>
+
+https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
 <br/>
@@ -182,7 +190,8 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 
 ## RF 기본용어          
 
-나는 개인적으로 옛날의 일본책들을 좋아하며, 특히 HW쪽으로는 더 쉽게 설명을 해놓았다. 
+나는 개인적으로 옛날의 일본책들을 좋아하며, 특히 HW쪽으로는 더 쉽게 설명을 해놓았다.          
+전자회로부터, 각 소자 HW 책 역시 일본책들이 더 좋다      
   http://www.rfdh.com/rfdb.php3
 
 <br/>
@@ -190,9 +199,18 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 
 ## Programming Chirp Parameters 
 
-중요한 자료이며, 각 FFT Size 및 관련설정부분을 전체 쉽게 알 수 있다. 
+<br/>
+<br/>
 
-3 Chirp Configurations for Common Applications
+ 
+
+2.3.1 Angular Resolution  ( MIMO 와 Virtual Anthena , 즉 Phsed Array Anthena )
+   - 여기 왜 2 Lamda 와 Lamda/2 (180) 인가에 대해서 많이 생각해봤다. 
+   - RX의 경우는 Frequency 중복허용과 이를 분리하기 위해서 최소 Lamda/2로 한걸로 생각했다 (OFDM, 부분 보시길)    
+   - TX의 경우는 왜 2 Lamda 일까? 일단 TX의 Fov 와 관련이 있을 꺼 같다.    
+3. Chirp Configurations for Common Applications           
+   - 중요한 자료이며, 각 FFT Size 및 관련설정부분을 전체 쉽게 알 수 있다. 
+   - 내가 가장 찾던 자료이며, 이 부분에서 많은 것을 얻었다.    
 https://www.ti.com/lit/an/swra553a/swra553a.pdf?ts=1686732119535&ref_url=https%253A%252F%252Fwww.google.com%252F
 
 <br/>
@@ -229,9 +247,13 @@ Syntesizer를 빼면, 일반 Radio 즉, RF 통신과 큰차이가 없다
 
 <br/>
 
-하지만 가장 큰 차이라고 하면, RADAR는 거리를 2D로 해야 하고 Commmuncation은 D를 사용한다. 
-일반 RF Communcation의 거리는 센서 사이와 거리이다. 하지만, RADAR  Round Trip, 즉 왕복거리이다. 
-여기서 문제가 되는 것은 Amp , 즉 LNA 와 Noise 를 비롯하여 각종 문제가 있을 것이다. 
+둘 사이에서 가장 큰 차이라고 하면, RADAR는 거리를 2D로 해야 하고 Commmuncation은 D를 사용한다. 
+  - 일반 RF Communcation의 거리는 센서사이와 거리. 
+  - RADAR  Round Trip, 즉 왕복거리이다 
+
+여기서 문제가 되는 것은 Amp(LNA)와 Noise 를 비롯하여 각종 문제가 있을 것이다. 
+더불어 거리에 대한 제약이 항상 민감하게 있다.    
+실제 RADAR 이론에서와 거리와 갭이 좀 많이 클거라고 생각되어진다.           
 
 <br/>
 <br/>
