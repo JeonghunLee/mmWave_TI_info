@@ -27,15 +27,19 @@ FMCW(Frequency Modulated Continuous Wave)
 <br/>
 <br/>
 
-RADAR의 기본이해는 생각보다 어렵지 않으나 완벽한 이해는 좀 힘들 것 같다. (기본 DSP지식이 있다면 어느정도 기본이해는 되어진다)    
-문서를 가끔 다시 한번 보는데, 각 Chapter마다 질문이 있는 Why를 생각하기 위해서 여러번 생각하게 한다.   
-
-<br/>
-
 FMCW의 기본이해는 일단 Ramp FM의 1 Chirp으로 Rx Chirp 에 포함된 Analog 성분을 분석하는 것이다. 
 더불어, 이런 Chirp들을 비교 분석하고, 더 나아가 Channel을 구성하여 4D까지 알아내는 것이다. 
 
 <br/>
+
+RADAR의 기본이해는 생각보다 어렵지 않으나 완벽한 이해?는 좀 힘들 것 같다. 
+기본 DSP지식이 있다면 어느정도 기본이해는 되어진다. 
+
+상위 문서를 가끔 다시 한번 보는데, 각 Chapter마다 질문이 있는 Why를 생각하기 위해서 여러번 생각하게 한다.   
+나의 경우, 질문에 대답은 다 찾았으며, 완벽한 이해? 즉, TI EVM가지고 테스트를 해본적이 없어 
+뭐라고 말을 못하겠다.     
+<br/>
+
 
 * RF Calibration 
 TI에서는 Self-Calibration 기능제공해주고 있으며, 글을 읽어보면,  주기적으로 Calibration을 해야 하는 것으로 보인다.  
