@@ -150,7 +150,8 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
       * BPM-MIMO 
 만약 Lamda/theta/omega 기호의 의미를 파악하지 못했다면, 상위 introdution을 다시 보자.   
 수학도출과정이 이해가 안되어진다면, 그냥 그러려니하고 넘어가자   
-중요한 것은 안테나의 RX의 Lamda/2 이다. 
+중요한 것은 안테나의 RX의 Lamda/2 이다. (현재 이해한 바로는 TX의 주파수 분리하는 최소 Phase의 180 필요)    
+그 이유를 간단히 보면, OFDM과 유사한 것 같다.                                
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
