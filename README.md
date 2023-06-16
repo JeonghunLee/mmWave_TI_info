@@ -28,7 +28,11 @@ FMCW(Frequency Modulated Continuous Wave)
 
 RADAR의 기본이해는 생각보다 어렵지 않으나 완벽한 이해는 좀 힘들 것 같다. (기본 DSP지식이 있다면 어느정도 기본이해는 되어진다)    
 문서를 가끔 다시 한번 보는데, 각 Chapter마다 질문이 있는 Why를 생각하기 위해서 여러번 생각하게 한다.   
-  
+
+<br/>
+
+FMCW의 기본이해는 일단 Ramp FM의 1 Chirp으로 Rx Chirp 에 포함된 Analog 성분을 분석하는 것이다. 
+더불어, 이런 Chirp들을 비교 분석하고, 더 나아가 Channel을 구성하여 4D까지 알아내는 것이다. 
 
 <br/>
 
@@ -140,12 +144,13 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 **MIMO RADAR**  
 이 부분을 보면 쉽게 Phase 기반으로 삼각함수이용하여 이해가능하며, arch(inverse) tangent 도 충분히 이용가능할 것 같다.   
   * single-input-multiple-output (SIMO): 1개 TX기반으로 여러개의 RX에서 이를 분석한다.    
-  * Multiple-input-multiple-output (MIMO): 여러개 TX 기반으로 RX에서 이를 구분하여 가상 Channel을 만들어 사용한다.   
+  * Multiple-input-multiple-output (MIMO): 여러개 TX 기반으로 RX에서 이를 구분하여 Virtual Channel을 만들어 사용한다.   
       * 세부내용은 아래 Principle of the MIMO Radar
       * Time Division Multiplexing (TDM-MIMO)  
       * BPM-MIMO 
 만약 Lamda/theta/omega 기호의 의미를 파악하지 못했다면, 상위 introdution을 다시 보자.   
 수학도출과정이 이해가 안되어진다면, 그냥 그러려니하고 넘어가자   
+중요한 것은 안테나의 RX의 Lamda/2 이다. 
   https://www.ti.com/lit/an/swra554a/swra554a.pdf?ts=1658203955728&ref_url=https%253A%252F%252Flink.zhihu.com%252F%253Ftarget%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fpdf%252Fswra554
 
 
@@ -176,15 +181,29 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 
 ## RF 기본용어          
 
-
+나는 개인적으로 옛날의 일본책들을 좋아하며, 특히 HW쪽으로는 더 쉽게 설명을 해놓았다. 
   http://www.rfdh.com/rfdb.php3
 
 <br/>
 <br/>
 
+## Programming Chirp Parameters 
+
+중요한 자료이며, 각 FFT Size 및 관련설정부분을 전체 쉽게 알 수 있다. 
+
+3 Chirp Configurations for Common Applications
+https://www.ti.com/lit/an/swra553a/swra553a.pdf?ts=1686732119535&ref_url=https%253A%252F%252Fwww.google.com%252F
+
+<br/>
+<br/>
 
 ## 시스템 잡음지수 계산 (Cascade Noise Figure)
+
+시스템 잡음지수 계산 (Cascade Noise Figure)
  http://www.rfdh.com/rfdb/nf.htm
+
+이외 RF관련부분 내용을 좀 더 알고 싶다면, 아래의 사이트에서 확인하자. 
+  http://www.rfdh.com/invite/ilab/k1.htm
 
 <br/>
 <br/>
@@ -206,6 +225,12 @@ TI에서는 별도로 현재 mmWave Tool을 제공하여, 이부분을 추후에
 Radar의 HW구조를 보면, synthesizer를 제어를 하여 통신부분으로 편입될 가능성이 있을 것 같아 관련자료 찾음    
 Syntesizer를 빼면, 일반 Radio 즉, RF 통신과 큰차이가 없다    
 예를들면, WIFI or 5G에 적용가능할 것 같으며, 다만 Time을 분할해서 Syntesizer를 사용해야 하므로 관련부분은 복잡해질 둣하다.   
+
+<br/>
+
+하지만 가장 큰 차이라고 하면, RADAR는 거리를 2D로 해야 하고 Commmuncation은 D를 사용한다. 
+일반 RF Communcation의 거리는 센서 사이와 거리이다. 하지만, RADAR  Round Trip, 즉 왕복거리이다. 
+여기서 문제가 되는 것은 Amp , 즉 LNA 와 Noise 를 비롯하여 각종 문제가 있을 것이다. 
 
 <br/>
 <br/>
